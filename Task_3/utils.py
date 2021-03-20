@@ -50,7 +50,6 @@ def appearance(intervals):
     return len(lesson.intersection(pupil_presence, tutor_presence))
 
 
-
 tests = [
    {'data': {'lesson': [1594663200, 1594666800],
              'pupil': [1594663340, 1594663389, 1594663390, 1594663395, 1594663396, 1594666472],
@@ -71,7 +70,5 @@ tests = [
 
 if __name__ == '__main__':
     for i, test in enumerate(tests):
-
         test_answer = appearance(test['data'])
-
         assert test_answer == test['answer'], f'Error on test case {i}, got {test_answer}, expected {test["answer"]}'
