@@ -8,8 +8,6 @@ Task 2:
 Б: 412
 В:....
 """
-import multiprocessing
-
 from bs4 import BeautifulSoup as bs
 import requests
 from threading import Thread
